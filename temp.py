@@ -22,7 +22,7 @@ st.title('Studying different parameters of employee activity')
 #st.header("Deadd", anchor=None)
 
 #Reading csv file
-df= pd.read_csv(r'C:\Users\Haidar\Desktop\AUB\MSBA\MSBA325\Assignments\Assignment#2\HRDataset_v14.csv')
+df= pd.read_csv(r'HRDataset_v14.csv')
 
 #k!p@s$@_S(Ho7ielD
 #Showing plots    
