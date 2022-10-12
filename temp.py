@@ -89,7 +89,7 @@ slider_salary = st.slider("Choose Salary Range", max_value = 250000, min_value =
                           step = 10000)
 
 df2 = df.loc[(df["Salary"] >= slider_salary[0]) & (df["Salary"] <= slider_salary[1])]
-x7=px.area(df,x='Salary', y='Absences',
+x7=px.area(df2,x='Salary', y='Absences',
        color='RaceDesc',
        title='Absences vs Salary of employees from different race')
 st.plotly_chart(x7)
