@@ -59,7 +59,11 @@ else:
     st.write("Try again.")
 
 st.header("Bar Chart")
-x4=px.histogram(df, x='RecruitmentSource',color='RecruitmentSource', histfunc="count", 
+box = st.selectbox(
+    'What sources would you like to include?',
+    options=('Sex', 'RecruitmentSource'))
+
+x4=px.histogram(df, x=box, color=box,
              title='Number of employees recruited per each Source')
 st.plotly_chart(x4)
 
